@@ -222,6 +222,10 @@
                         <a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span></a>                        
                     </li> 
                     <!-- END SIGN OUT -->
+					
+					
+					
+					
                     <!-- MESSAGES -->
                     <li class="xn-icon-button pull-right">
                         <a href="#"><span class="fa fa-comments"></span></a>
@@ -265,6 +269,8 @@
                         </div>                        
                     </li>
                     <!-- END MESSAGES -->
+					
+					
                     <!-- TASKS -->
                     <li class="xn-icon-button pull-right">
                         <a href="#"><span class="fa fa-tasks"></span></a>
@@ -324,24 +330,50 @@
                 <!-- END BREADCRUMB -->
                 
                 <!-- PAGE TITLE -->
-                <div class="page-title">                    
-                    <h2><span class="fa fa-arrow-circle-o-left"></span> Manager View</h2>
-                </div>
-                <!-- END PAGE TITLE -->                
+					
+					<div class="page-title">  
+						<h2><span class="fa fa-arrow-circle-o-left"></span> Manager View</h2>
+
+					
+					 <!-- END PAGE TITLE -->  
+				
+                    <ul class = "panel-controls" >
+						<li class="xn-icon-button pull-right">
+						
+						<!-- SETTINGS WIDGET -->
+							<div class ="col-md-2">
+                                <div class="panel-body">
+                                    <form action="#" role="form" class="form-inline">
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label text-left">Edit</label>
+                                            <div class="col-md-3">
+                                                <label class="switch">
+                                                    <input type="checkbox" class="switch" value="1" checked/>
+                                                    <span></span>
+                                                </label>                                            
+                                            </div>
+                                            
+                                        </div>                                    
+                                    </form>
+                                </div>
+                            </div>
+						</li>
+					</ul>
+				</div>
+                        
+                <!-- END SETTINGS WIDGET -->   
                 
                 <!-- PAGE CONTENT WRAPPER -->
                 <div class="page-content-wrap">
-               
-				
-				
+
 				<!-- START CHECKBOXES RADIO AND SELECT -->
-						<div class="col-md-4">
+					
                             <div class="block">
                                 <h4>Filter</h4>
-                                <form role="form" class="form-horizontal">                                    
+                                <form role="form" class="form-inline">                                    
                                     <div class="form-group">
-                                        <label class="col-md-3 control-label">Byers Job Number</label>
-                                        <div class="col-md-9">                                        
+                                        <label class="col-md-3 control-label">Byers Job #</label>
+                                        <div class="col-md-6">                                        
                                             <select class="form-control select">
                                                 <option>4563866</option>
                                                 <option>9987655</option>
@@ -353,7 +385,7 @@
                                     </div>
                                     <div class="form-group">                                        
                                         <label class="col-md-3 control-label">Employee</label>
-                                        <div class="col-md-9">                                                                                
+                                        <div class="col-md-6">                                                                                
                                             <select multiple class="form-control select">
                                                 <option>Mary Helen</option>
                                                 <option>Darby Smith</option>
@@ -361,20 +393,6 @@
                                                 <option>Josh Swindle</option>
                                                 <option>Select All</option>
                                             </select>   
-                                        </div>
-                                    </div>
-                                    
-                                                                      
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">Search</label>
-                                        <div class="col-md-9">                                                                                
-                                            <select class="form-control select" data-live-search="true">
-                                                <option>Lorem ipsum dolor</option>
-                                                <option>Sit amet sicors</option>
-                                                <option>Mostoly stofu tiro</option>
-                                                <option>Vico sante fara</option>
-                                                <option>Delomo ponto si</option>
-                                            </select>
                                         </div>
                                     </div>
                                 </form>                                                                                        
@@ -385,64 +403,91 @@
 				
 				
 				
-                    <div class="row">
-                        <div class="col-md-4">
+				
+                  
+                       
 
                             <!-- START DEFAULT FORM ELEMENTS -->
-                            <div class="block">
+                          
+						   <div class="block">
+						   
                                 <h4>Summary</h4>
-                                 <form class="form-horizontal" role="form">                                   
+                               
+								 <form class="form-inline" role="form">                                   
                                     
                                    
                                     <div class="form-group">
                                         <label class="col-md-2 control-label">Total Hours:</label>
-                                        <div class="col-md-4">
-                                            <input type="text" class="form-control" readonly value="Readonly value"/>
+                                        <div class="col-md-2">
+                                            <input type="text" class="form-control" readonly value="1900"/>
                                         </div>
 									</div>
                                      
 									<div class="form-group">
                                         <label class="col-md-2 control-label">Total Paid:</label>
-                                        <div class="col-md-4">
-                                            <input type="text" class="form-control" readonly value="Readonly value"/>
+                                        <div class="col-md-2">
+                                            <input type="text" class="form-control" readonly value="20,000"/>
                                         </div>
 									</div>
                                     
 									<div class="form-group">
-                                        <label class="col-md-2 control-label">Total Billed:</label>
-                                        <div class="col-md-4">
-                                            <input type="text" class="form-control" readonly value="Readonly value"/>
+                                        <label class="col-md-2 control-label"> Total Billed:</label>
+                                        <div class="col-md-2">
+                                            <input type="text" class="form-control" readonly value="27,000"/>
+											
                                         </div>
+						
                                     </div>
-									
-                                                                        
-                                    <div class="form-group">
-                                        <label class="col-md-2 control-label">Placeholder</label>
-                                        <div class="col-md-4">
-                                            <input type="text" class="form-control" placeholder="Fill this field please"/>
-                                        </div>
-                                    </div>                                                                     
-                                    
 									<div class="form-group">
-                                        <label class="col-md-2 control-label">Text</label>
-                                        <div class="col-md-4">
-                                            <input type="text" class="form-control" value="Some text value..."/>
+                                       
+                                        <div class="col-md-2">
+                                            
                                         </div>
                                     </div>
 									
-                                    <div class="form-group">
-                                        <label class="col-md-2 control-label">Label</label>
-                                        <div class="col-md-4">
-                                            <p class="form-control-static">Static form control</p>
-										</div>
-									</div>
-                                    </div>                                    
-                                </form>
+									<div class="form-group">
+                                        <label class="col-md-2 control-label">Payout Percent:</label>
+                                        <div class="col-md-2">
+                                            <input type="text" class="form-control"  readonly value="%30"/>
+                                        </div>
+                                    </div>  									
+								</form>
+								
 							</div>
-					</div>	
+						
+										
                             
                             <!-- END DEFAULT FORM ELEMENTS -->
 
+							<!-- Beginning -->
+                          
+						  <div class="block">
+                                <h4>Entry 1</h4>
+                                 <form class="form-inline" role="form">
+								  
+									<div class="form-group">
+                                        <label class="col-md-3 control-label">Employee:</label>
+                                        <div class="col-md-4">
+                                            <input type="text" class="form-control" readonly value="Darby Smith"/>
+                                        </div>
+                                    </div>                       
+									<div class="form-group">
+                                        <label class="col-md-3 control-label">Class Code:</label>
+                                        <div class="col-md-4">
+                                            <input type="text" class="form-control" readonly value="class code"/>
+                                        </div>
+                                    </div>                                        
+                                </form>
+							</div>
+						
+							
+				
+				<!--End  -->
+							
+							
+							
+							
+							
                             <!-- START CHECKBOXES RADIO AND SELECT -->
                             
                             <!-- END OF CHECKBOXES RADIO AND SELECT -->
@@ -462,10 +507,10 @@
 									
 									
 							<!-- Start of Drop Downs --> 
-							<div class="form-horizontal">	
+							<div class="form-inline">	
 								<div class="block">
 									<div class="form-group">
-                                        <label class="col-md-3 control-label">EWO</label>
+                                        <label class="col-md-3 control-label">Job</label>
                                         <div class="col-md-2">                                        
                                             <select class="form-control select">
                                                 <option>4563866</option>
@@ -477,7 +522,7 @@
                                         </div>
                                     </div>
 									 <div class="form-group">
-                                        <label class="col-md-3 control-label">PM Tool</label>
+                                        <label class="col-md-3 control-label">Phase</label>
                                         <div class="col-md-2">                                        
                                             <select class="form-control select">
                                                 <option>4563866</option>
@@ -489,7 +534,43 @@
                                         </div>
                                     </div>
 									 <div class="form-group">
-                                        <label class="col-md-3 control-label">CFAS</label>
+                                        <label class="col-md-3 control-label">Task</label>
+                                        <div class="col-md-2">                                        
+                                            <select class="form-control select">
+                                                <option>4563866</option>
+                                                <option>9987655</option>
+                                                <option>Option 3</option>
+                                                <option>Option 4</option>
+                                                <option>Option 5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+									<div class="form-group">
+                                        <label class="col-md-3 control-label">Step</label>
+                                        <div class="col-md-2">                                        
+                                            <select class="form-control select">
+                                                <option>4563866</option>
+                                                <option>9987655</option>
+                                                <option>Option 3</option>
+                                                <option>Option 4</option>
+                                                <option>Option 5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+									 <div class="form-group">
+                                        <label class="col-md-3 control-label">Descrip</label>
+                                        <div class="col-md-2">                                        
+                                            <select class="form-control select">
+                                                <option>4563866</option>
+                                                <option>9987655</option>
+                                                <option>Option 3</option>
+                                                <option>Option 4</option>
+                                                <option>Option 5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+									 <div class="form-group">
+                                        <label class="col-md-3 control-label">CC</label>
                                         <div class="col-md-2">                                        
                                             <select class="form-control select">
                                                 <option>4563866</option>
@@ -503,156 +584,248 @@
 								</div>
 							</div>	 
 							<!-- END OF Drop Downs--> 	 
+										
+											 <!-- START SIMPLE DATATABLE -->
+											<div class="panel panel-default">
+												<div class="col-md-6">  
+													<div class="form-horizontal">
+														<div class ="block">
+														
+															
+															<div class="panel-heading">                                
+																<h3 class="panel-title">TimeSheet</h3>   
+																<ul class="panel-controls">
+							   
+																</ul>                                
+															
+															</div>
+															<div class="panel-body">
+																<table class="table datatable_simple">
+																	<thead>
+																		<tr>
+																			<th>SUN</th>
+																			<th>MON</th>
+																			<th>TUES</th>
+																			<th>THUR</th>
+																			<th>FRI</th>
+																			<th>SAT</th>
+																			<th>TOT</th>
+																			<th>ETC</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																		<td>
+																		   <div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div>
+																	
+																		</td>
+																		<td>
+																		   <div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div>
+																	
+																		</td>
+																			<td> 
+																		 <div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div>
+																	
+																		</td>
+																			<td><div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div></td>
+																			<td><div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div></td>
+																			<td><div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div></td>
+																			<td><div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div></td>
+																			<td><div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div></td>
+																		</tr>
+																		<tr>
+																		<td>
+																		   <div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div>
+																	
+																		</td>
+																		<td>
+																		   <div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div>
+																	
+																		</td>
+																		<td>
+																			<div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div>
+																	
+																	</td>
+																			<td><div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div></td>
+																			<td><div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																		   
+																		</div></td>
+																			<td><div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div></td>
+																			<td><div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div></td>
+																			<td><div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div></td>
+																		</tr>
+																   
+																		<tr>
+																		<td>
+																		   <div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div>
+																	
+																		</td>
+																			<td><div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div></td>
+																			<td><div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div></td>
+																			<td><div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div></td>
+																			<td><div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div></td>
+																			<td><div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div></td>
+																		<td>
+																		   <div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div>
+																	
+																		</td>
+																		<td>
+																		   <div class="input-group bootstrap-timepicker">
+																			<input type="text" class="form-control timepicker24"/>
+																			
+																		</div>
+																	
+																		</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+															
+														</div>
+													</div>
+												</div>
+													<!--end of timesheet-->  
+												<!--start of status-->
+												<div class="col-md-3">                        
+													<form class="form-inline">
+														<div class="block">
+													
+															<div class="panel-heading">                                
+																<h3 class="panel-title">Status</h3>   
+															</div>
+															<div class="panel-body">
+																<div class="form-group">           
+																	<div class="col-md-4">                                    
+																		
+																		 <span class="label label-danger">NOT READY</span>
+																		 </br>
+																		 </br>
+																		 <span class="label label-success"><span class="fa fa-thumbs-o-up"></span> READY!!</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</form>	
+												</div>
+												<!--end of status-->
+								
+										<!-- END SIMPLE DATATABLE -->
+												<div class="col-md-3">                        
+													<form class="form-inline">
+														<div class="block">
+													
+															<div class="panel-heading">                                
+																<h3 class="panel-title">Not Approved</h3>   
+															</div>
+															<div class="panel-body">
+																<div class="form-group">           
+																	<div class="col-md-4">                                    
+																		<label class="check"><input type="checkbox" class="icheckbox" checked="checked"/> Checked</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</form>	
+												</div>
+												<!--end of not approved-->
+												
+											</div>
+										
+								
+								
+                            
 							
-							 <!-- START SIMPLE DATATABLE -->
-				<div class="col-md-6">  
-					<div class="form-horizontal">
-						<div class ="block">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">                                
-                                    <h3 class="panel-title">TimeSheet</h3>   
-                                    <ul class="panel-controls">
-                                        <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
-                                        <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
-                                        
-                                    </ul>                                
-                                </div>
-                                <div class="panel-body">
-                                    <table class="table datatable_simple">
-                                        <thead>
-                                            <tr>
-                                                <th>SUN</th>
-                                                <th>MON</th>
-                                                <th>TUES</th>
-                                                <th>THUR</th>
-                                                <th>FRI</th>
-                                                <th>SAT</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td> 
-                                             <div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                
-                                            </div>
-                                        
-											</td>
-                                                <td><div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                
-                                            </div></td>
-                                                <td><div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                
-                                            </div></td>
-                                                <td><div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                
-                                            </div></td>
-                                                <td><div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                
-                                            </div></td>
-                                                <td><div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                
-                                            </div></td>
-                                            </tr>
-                                            <tr>
-											<td>
-                                                <div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                
-                                            </div>
-                                        
-										</td>
-                                                <td><div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                
-                                            </div></td>
-                                                <td><div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                               
-                                            </div></td>
-                                                <td><div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                
-                                            </div></td>
-                                                <td><div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                
-                                            </div></td>
-                                                <td><div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                
-                                            </div></td>
-                                            </tr>
-                                       
-                                            <tr>
-											<td>
-                                               <div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                
-                                            </div>
-                                        
-											</td>
-                                                <td><div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                
-                                            </div></td>
-                                                <td><div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                
-                                            </div></td>
-                                                <td><div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                
-                                            </div></td>
-                                                <td><div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                
-                                            </div></td>
-                                                <td><div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                
-                                            </div></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-								</div>
-                            </div>
-						</div>
-					</div>
-				</div>
-                            <!-- END SIMPLE DATATABLE -->
-							<div class="col-md-2">                        
-
-                            <div class="block">
-                                <h4>Not Approved</h4>
-                                <div class="panel panel-default">
-                                    <div class="panel-body">
-                                    <div class="form-group">
-                                        
-                                        <div class="col-md-4">                                    
-                                            <label class="check"><input type="checkbox" class="icheckbox" checked="checked"/> Checked</label>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                    </div>
-                                </div>
-                            </div>
-						</div>
-					
 							
 							<!-- Start of Drop Downs --> 
+							
 							<div class="block">
-							<div class="form-horizontal">			
+							<div class="form-horizontal">
+							 
+								<div class="form-group">
+                                     <label class="col-md-3 control-label">Byers Job #:</label>
+										<div class="col-md-2">
+											<input type="text" class="form-control" readonly value="Readonly value"/>
+										</div>
+								</div>
+							 
+							 
+							 <div class="form-group">
+                                        <label class="col-md-3 control-label">PO #:</label>
+                                        <div class="col-md-2">
+                                            <input type="text" class="form-control" readonly value="Readonly value"/>
+                                        </div>
+									</div>
 							
 									<div class="form-group">
                                         <label class="col-md-3 control-label">EWO</label>
-                                        <div class="col-md-9">                                        
+                                        <div class="col-md-2">                                        
                                             <select class="form-control select">
                                                 <option>4563866</option>
                                                 <option>9987655</option>
@@ -664,7 +837,7 @@
                                     </div>
 									 <div class="form-group">
                                         <label class="col-md-3 control-label">PM Tool</label>
-                                        <div class="col-md-9">                                        
+                                        <div class="col-md-2">                                        
                                             <select class="form-control select">
                                                 <option>4563866</option>
                                                 <option>9987655</option>
@@ -676,7 +849,7 @@
                                     </div>
 									 <div class="form-group">
                                         <label class="col-md-3 control-label">CFAS</label>
-                                        <div class="col-md-9">                                        
+                                        <div class="col-md-2">                                        
                                             <select class="form-control select">
                                                 <option>4563866</option>
                                                 <option>9987655</option>
@@ -686,105 +859,56 @@
                                             </select>
                                         </div>
                                     </div>
+									
+									 <div class="form-group">
+                                        <label class="col-md-3 control-label">Bid Area/WC</label>
+                                        <div class="col-md-2">
+                                            <input type="text" class="form-control" readonly value="Readonly value"/>
+                                        </div>
+									</div>
+                                     
+									<div class="form-group">
+                                        <label class="col-md-3 control-label">ATT GM:</label>
+                                        <div class="col-md-2">
+                                            <input type="text" class="form-control" readonly value="Readonly value"/>
+                                        </div>
+									</div>
+                                    
+									<div class="form-group">
+                                        <label class="col-md-3 control-label">Payor:</label>
+                                        <div class="col-md-2">
+                                            <input type="text" class="form-control" readonly value="Readonly value"/>
+                                        </div>
+                                    </div>
+
+									</br>
+									</br>
+                                    
+									<div class="form-group">
+                                        <label class="col-md-3 control-label">Total:</label>
+                                        <div class="col-md-2">
+                                            <input type="text" class="form-control" readonly value="Readonly value"/>
+                                        </div>
+                                    </div>
 								</div>
 							</div>
 							
 							<!-- END OF Drop Downs--> 
 							
-							
-                            <!-- START DATE AND TIME PICKER -->
-                            <div class="block">
-                                <h4>Date and time pickers</h4>                        
-                                    <form class="form-horizontal" role="form">                                
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">Default</label>
-                                        <div class="col-md-5">
-                                            <input type="text" class="form-control datepicker" value="2014-08-04">
-                                        </div>
-                                    </div>
-                                    
-                                    
-                                    
-									<ul class="panel-controls panel-controls-title">                                        
-                                        <li>
-                                            <div id="reportrange" class="dtrange">                                            
-                                                <span></span><b class="caret"></b>
-                                            </div>                                     
-                                        </li>                                
-                                        <li><a href="#" class="panel-fullscreen rounded"><span class="fa fa-expand"></span></a></li>
-                                    </ul>                                    
-									
-									
-
-                                    <h5 class="push-up-20">TimeKeeper</h5>
-                                      <form class="form-inline" role="form">
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">Sun</label>
-                                        <div class="col-md-5">
-                                            <div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-									 <div class="form-group">
-                                        <label class="col-md-3 control-label">Mon</label>
-                                        <div class="col-md-5">
-                                            <div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-									 <div class="form-group">
-                                        <label class="col-md-3 control-label">Tues</label>
-                                        <div class="col-md-5">
-                                            <div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-									 <div class="form-group">
-                                        <label class="col-md-3 control-label">Wed</label>
-                                        <div class="col-md-5">
-                                            <div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-									 <div class="form-group">
-                                        <label class="col-md-3 control-label">Thur</label>
-                                        <div class="col-md-5">
-                                            <div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-									 <div class="form-group">
-                                        <label class="col-md-3 control-label">Fri</label>
-                                        <div class="col-md-5">
-                                            <div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-									 <div class="form-group">
-                                        <label class="col-md-3 control-label">Sat</label>
-                                        <div class="col-md-5">
-                                            <div class="input-group bootstrap-timepicker">
-                                                <input type="text" class="form-control timepicker24"/>
-                                                <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
-                                            </div>
-                                        </div>
-                                    </div>
+							<!--start button -->
+							<div class="col-md-6">
+							<div class="block">                               
+                                <form class="form-inline" role="form">
+									<div class="col-md-4">
+										<button type="button" class="btn btn-success">Approve Send</button>
+									</div>
+									<div class="col-md-4">
+										<button type="submit" class="btn btn-danger">Cancel Send </button>
+									</div>
 								</form>
-                                                       
-                            </div>      
-                            <!-- END DATE AND TIME PICKER -->
+							</div>
+							</div>
+							<!-- end button -->
 
                             <!-- START COLORPICKER -->
                                                                
@@ -794,45 +918,19 @@
                                
                             <!-- END VERTICAL FORM SAMPLE -->
 
-                            <!-- START INLINE FORM SAMPLE -->
-                            <div class="block">
-                                <h4>Inline Form Sample</h4>                                
-                                <form class="form-inline" role="form">
-                                    <div class="form-group">
-                                        <label class="sr-only">Login</label>
-                                        <input type="text" class="form-control" placeholder="Your login"/>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="input-group">                                            
-                                            <label class="sr-only">Password</label>
-                                            <input class="form-control" type="password" placeholder="Your password"/>
-                                        </div>
-                                    </div>                                    
-                                    <button type="submit" class="btn btn-danger">Sign in</button>
-                                </form>                                
-                            </div>
-                            <!-- END INLINE FORM SAMPLE -->
 
                             <!-- START HORIZONTAL FORM SAMPLE -->
                             
                             <!-- END HORIZONTAL FORM SAMPLE -->                        
-                        </div>
+                    </div>
 
-                        <div class="col-md-12">
+                      
 
                             <!-- START FORM VALIDATION STATES -->
                             
                             <!-- END FORM VALIDATION STATES -->                        
 
-                        </div>
-
-                        <div class="col-md-12">
-
-                            <!-- START FORM GRID -->
-                           
-                            <!-- END HORIZONTAL FORM SAMPLE -->                        
-
-                        </div>
+ 
 
                     </div>
 					
